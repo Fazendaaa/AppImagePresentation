@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'Droid Serif';
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: normal;
+        }
+
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Ubuntu Mono';
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+
+        /* Clear floats after image containers */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+
+class: center, middle
+
+# Dos games para o AppImage
+##### Fazenda
+
+---
+
+"As a user, I want to download an application from the original author, and run it on my Linux desktop system just like
+I would do with a Windows or Mac application."
+"As an application author, I want to provide packages for Linux desktop systems, without the need to get it 'into' a
+distribution and without having to build for gazillions of different distributions."
+
+- [Official AppImage Website](https://appimage.org/)
+
+---
+
+## Exemplos de apps
+
+- Atom
+- Blender
+- Chromium
+- Firefox
+- LibreOffice
+
+---
+
+## OSs suportados
+
+- Arch
+- RHEL
+- CentOS
+- openSUSE
+- SLED
+- Fedora
+- debian and derivatives
+
+---
+
+## Como usar
+
+```shell
+$ chmod a+x Subsurface*.AppImage
+```
+
+```shell
+$ ./Subsurface*.AppImage
+```
+
+---
+
+## Sobre o projeto
+
+- Released first in 2004 under the name klik, it was continuously developed, then renamed in 2011 to PortableLinuxApps and later in 2013 to AppImage.
+- [5k GH stars](https://github.com/AppImage/appimagekit/)
+- MIT License
+- 
+
+---
+
+## Como funciona?
+
+- AppImageKit:
+    - appimagetool: converts an AppDir into a self-mounting filesystem image
+    - appimaged: is a daemon that handles registering and unregistering AppImages with the system
+
+---
+
+## Vantanges
+
+- No root needed
+- No system libraries changed
+- Optional binary delta updates
+- Works on Live ISOs
+- Acessa as bibliotecas compartilhadas mas não as copia
+- Uso de softwares antigos em modo de "compatibilidade"
+
+---
+
+## Desvantagens
+
+- Pouco utilizado
+
+---
+
+<!-- cola 
+
+FUSE is available for Linux, FreeBSD, OpenBSD, NetBSD (as puffs), OpenSolaris, Minix 3, Android and macOS.
+FUSE is free software originally released under the terms of the GNU General Public License and the GNU Lesser General Public License. 
+
+-->
+
+<div class="row">
+    <div class="column">
+        <iframe src="https://giphy.com/embed/8Iw7bZ0y80mc" width="269" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
+    <div class="column">
+        Link da apresentação:
+
+        <img src="./frame.png" alt="link" width="300" />
+
+        http://tiny.cc/JRPY
+
+        <br>
+        <a href="https://github.com/Fazendaaa/JobLegacy"><img border="0" alt="Github" src="https://tettra.co/wp-content/logos/github.png" width="280" height="120">
+    </div>
+</div>
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+        var slideshow = remark.create();
+    </script>
+</body>
+
+</html>
